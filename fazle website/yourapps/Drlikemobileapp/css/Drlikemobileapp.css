@@ -1,0 +1,29 @@
+@media screen and (min-width: 360px) {
+	.navbar-nav{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 1024px) {
+ .navbar-nav{
+		width: 100%;
+	}
+}
+header{
+	margin: 0;
+	padding: 0;
+}
+.section1{
+	height: 80vh;
+	background-color: #CCCCCC;
+}
+.section2{
+	height: 110vh;
+	background-color: #CCCCCC;
+	overflow: auto;
+}
+.footer{
+	height: 20vh;
+}
+.row{
+	padding-top: 2em;
+}
