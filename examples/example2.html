@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+	<title> webpage </title>
+	<style>
+	button{
+		background-color: red;
+		padding: 10px;
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+	button:hover{
+		background-color: black;
+		color: white;
+	}
+	</style>
+</head>
+<body>
+<p> Click on button bellow to get pop-up </p>
+	<button> PRESS ME </button>
+	<script>
+		const button = document.querySelector('button');
+
+		button.onclick = function() {
+		  let name = prompt('What is your name?');
+		  alert('Hello ' + name + ', nice to see you!');
+		}
+	</script>
+</body>
+</html>
