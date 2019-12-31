@@ -1,0 +1,68 @@
+<html>
+    <head>
+	<title> Simple Interest Calculation</title>
+
+        <script>
+            function calculate()
+            {
+
+                ptr = document.getElementById("ptr1").value;
+                numb = document.getElementById("numb").value;
+                rates = document.getElementById("rate").value;
+                result = document.getElementById("result");
+                result.value =  (ptr*numb*rates/100);
+                tprinc = document.getElementById("tprinc");
+                tprinc.value = (ptr);
+                tinterest = document.getElementById("tinterest");
+                tinterest.value = (rates);
+            }
+
+            function clearC(){
+
+              ctr = document.getElementById("ptr1");
+              ctr.value =' ';
+              ctr = document.getElementById("numb");
+              ctr.value =' ';
+              ctr = document.getElementById("rate");
+              ctr.value =' ';
+              ctr = document.getElementById("result");
+              ctr.value =' ';
+              ctr = document.getElementById("tprinc")
+              ctr.value =' ';
+              ctr = document.getElementById("tinterest")
+              ctr.value =' ';
+            }
+        </script>
+        <style>
+
+
+
+        </style>
+    </head>
+
+    <body>
+      <div class="col-sm-12">
+        <div class="row">
+        <h1>Simple Interest Calculation</h1>
+        <table>
+          Principle Amount: <input id="ptr1" type='text' /><br/>
+          Rate of Interest: &nbsp;&nbsp;&nbsp;&nbsp;<input id="rate"  type='text' /><br/>
+          No. of Duration in months / year: <input id="numb"  type='text'/><br/>
+          Result: <input id="result" readonly /> readonly text box
+        </table>
+
+        <br/><br/>
+
+            <input type="button" id="calc" onclick="calculate()" value=Calculate>
+            <input type="button" id="clr" onclick="clearC()" value=Clear><br/>
+
+
+          <br/>
+          <br/>
+
+            Total Principle Amount: <input id="tprinc" readonly/> readonly text box<br/>
+            Total Interest: <input id="tinterest" readonly/> readonly text box<br/>
+          </div>
+        </div>
+    </body>
+</html>

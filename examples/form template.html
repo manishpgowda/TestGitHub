@@ -1,0 +1,119 @@
+<!Doctype html>
+<html>
+<head>
+	<title> Form page </title>
+	<script src="https://kit.fontawesome.com/yourcode.js"></script>
+	<style>
+		body{
+			background: url(images/nature.jpg);
+		}
+		.head{
+			border: 2px solid black;
+			background-color: black;
+			padding: 10px;
+		}
+		.head a{
+			color: darkgray;
+			text-decoration: none;
+			font-size: 1.7em;
+		}
+		.head a:hover{
+			color: white;
+		}
+		.headright{
+			text-align: right;
+			margin-top: -40px;
+			padding: 10px;
+		}
+		.head1{
+			padding: 10px;
+		}
+		.head1 h1{
+			color: white;
+			font-family: lucida sans;
+		}
+		
+		.body1{
+			border: 2px solid white;
+			height: 22em;
+			width: 65%;
+			margin-left: 14em;
+			background: rgba(0,128,128,0.6);
+			padding: 20px;
+		}
+		.body1 p{
+			color: white;
+		}
+		.body1 #a{
+			position:absolute;
+			right: 260px;
+			top: 200px;
+		}
+		#b{
+			position: absolute;
+			right: 250px;
+			top: 380px;
+		}
+		#c{
+			position: absolute;
+			right: 245px;
+			top: 420px;
+		}
+		.but1{
+			padding: 5px;
+			width: 120px;
+			text-align: center;
+			position: absolute;
+			left: 400px;
+			background-color: blue;
+		}
+		.but1:hover{
+			background-color: green;
+		}
+		.but2{
+			color: white;
+			padding: 5px;
+			text-align: center;
+			width: 120px;
+			height: 48px;
+			position: absolute;
+			left: 540px;
+			background-color: red;
+		}
+		.but2:hover{
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="head">
+		<a href="#"> &lt Back </a>
+		<a href="#">&nbsp; W3Layouts </a>
+		<div class="headright">
+			<a class="fas fa-pencil"> Edit </a>
+			<a class="fas fa-cloud">&nbsp; Download </a>
+		
+		</div>
+	</div>
+	<div class="head1">
+		<marquee scrollamount="20"><h1> PRODUCT ORDER FORM </h1></marquee>
+	</div>
+	<div class="body1">
+	<form>		
+		<p>FIRST NAME : <input type="text" value="Your First Name"></p>
+		<p id="a">LAST NAME : <input type="text" value="Your Last Name"></p>
+		<p>EMAIL : <input type="text" value="mail@example.com"></p>
+		<p>PHONE NUMBER : <input type="text" value="+??|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;??????????"></p>
+		<p>BILLILNG ADDRESS : <input type="text" value="Billing Address"></p>
+		<p>YOUR ADDRESS : <input type="text" value="Your Address"></p>
+		<p>CITY : <input type="text" value="Your City"></p>
+		<p id="b">STATE/PROVINCE : <input type="text" value="State or Province"></p>
+		<p>ZIP CODE : <input type="text" value="Zip Code"></p>
+		<p id="c">COUNTRY : <input type="text" value="Country"></p>
+			<div class="but1"><p>PLACE ORDER</button></p></div>
+			<div class="but2"><p>RESET</button></p></div>	
+	</form>
+	</div>
+
+</body>
+</html>
